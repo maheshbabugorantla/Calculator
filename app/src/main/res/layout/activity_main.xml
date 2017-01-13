@@ -207,14 +207,17 @@
                 android:textAlignment="center"
                 android:layout_weight="1"/>
 
-           <!-- <Button
+            <Button
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:id="@+id/button_mod"
-                android:text="%"
+                android:id="@+id/button_dot"
+                android:text="."
                 android:textSize="20sp"
+                android:layout_margin="1dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_style_operands"
                 android:textAlignment="center"
-                android:layout_weight="1"/> -->
+                android:layout_weight="1"/>
 
             <Button
                 android:layout_height="wrap_content"
@@ -230,7 +233,7 @@
                 android:topRightRadius="10dp"
                 android:topLeftRadius="10dp"
                 android:textAlignment="center"
-                android:layout_weight="18"/>
+                android:layout_weight="1"/>
 
             <Button
                 android:layout_width="wrap_content"

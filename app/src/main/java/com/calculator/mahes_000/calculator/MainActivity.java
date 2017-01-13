@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         (findViewById(R.id.button_minus)).setOnClickListener(this); // -
         (findViewById(R.id.button_mul)).setOnClickListener(this);   // *
         (findViewById(R.id.button_div)).setOnClickListener(this);   // /
-//        (findViewById(R.id.button_mod)).setOnClickListener(this);   // %
+        (findViewById(R.id.button_dot)).setOnClickListener(this);   // .
         (findViewById(R.id.button_eq)).setOnClickListener(this);    // =
         (findViewById(R.id.clear)).setOnClickListener(this);        // 'C'
         (findViewById(R.id.Backspace)).setOnClickListener(this);    // <=
@@ -144,10 +144,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 result.setText(expression.toString());
                 break;
 
-/*            case R.id.button_mod:
-                expression.append("%");
+            case R.id.button_dot:
+                expression.append('.');
                 result.setText(expression.toString());
-                break; */
+                break;
 
             case R.id.right_br:
                 expression.append(")");

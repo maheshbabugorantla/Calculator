@@ -102,30 +102,30 @@ class ExpressionConversion {
                 } else if (isOperator(c)) {
                     String op2 = stack.pop();
                     String op1 = stack.pop();
-                    long result;
+                    float result;
                     switch (c) {
                         case "*":
-                            result = Long.parseLong(op1) * Long.parseLong(op2);
-                            System.out.println("Mul: " + result);
-                            stack.push(Long.toString(result));
+                            result = Float.parseFloat(op1) * Float.parseFloat(op2);
+                            //System.out.println("Mul: " + result);
+                            stack.push(Float.toString(result));
                             break;
 
                         case "/":
-                            result = Long.parseLong(op1) / Long.parseLong(op2);
-                            System.out.println("Div: " + result);
-                            stack.push(Long.toString(result));
+                            result = Float.parseFloat(op1) / Float.parseFloat(op2);
+                            //System.out.println("Div: " + result);
+                            stack.push(Float.toString(result));
                             break;
 
                         case "+":
-                            result = Long.parseLong(op1) + Long.parseLong(op2);
-                            System.out.println("Add: " + result);
-                            stack.push(Long.toString(result));
+                            result = Float.parseFloat(op1) + Float.parseFloat(op2);
+                            //System.out.println("Add: " + result);
+                            stack.push(Float.toString(result));
                             break;
 
                         case "-":
-                            result = Long.parseLong(op1) - Long.parseLong(op2);
-                            System.out.println("Sub: " + result);
-                            stack.push(Long.toString(result));
+                            result = Float.parseFloat(op1) - Float.parseFloat(op2);
+                            //System.out.println("Sub: " + result);
+                            stack.push(Float.toString(result));
                             break;
                     }
                 }
@@ -154,7 +154,7 @@ class ExpressionConversion {
 
     private boolean isOperand(String val) {
         try {
-            Long.parseLong(val);
+            Float.parseFloat(val);
             System.out.println("Parsed Integer");
             return true;
         }
